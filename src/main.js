@@ -1,25 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import 'cube-ui/lib/cube.min.css'
+
 import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
-import VueLazyload from 'vue-lazyload'
-import Cube from 'cube-ui'
-
-Vue.use(Cube)
-
+import Plugin from './plugin'
+// const radio = (40/750)
+// document.documentElement.style.fontSize = radio * window.innerwidth + "px"
+Plugin(Vue)
 Vue.config.productionTip = false
-
-fastclick.attach(document.body)
-
-Vue.use(VueLazyload, {
-  loading: require('common/images/default.png')
-})
-
-// Vue.use(Cube)
+if ('addEventListener' in document) {
+  document.addEventListener('DOMContentLoaded', function() {
+    fastclick.attach(document.body)
+  })
+}
 
 /* eslint-disable no-new */
 new Vue({
