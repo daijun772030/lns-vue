@@ -7,8 +7,8 @@ import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
 import Plugin from './plugin'
-// const radio = (40/750)
-// document.documentElement.style.fontSize = radio * window.innerwidth + "px"
+// const radio = (30 / 750 ) 
+// document.documentElement.style.fontSize = radio * window.innerwidth + 'px'
 Plugin(Vue)
 Vue.config.productionTip = false
 if ('addEventListener' in document) {
