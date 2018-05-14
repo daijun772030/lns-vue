@@ -2,17 +2,19 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 
 import 'babel-polyfill'
+import 'lib-flexible'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
 import Plugin from './plugin'
-// const radio = (40/750)
-// document.documentElement.style.fontSize = radio * window.innerwidth + "px"
+import 'common/stylus/index.styl'
+
 Plugin(Vue)
+
 Vue.config.productionTip = false
 if ('addEventListener' in document) {
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     fastclick.attach(document.body)
   })
 }
@@ -21,6 +23,6 @@ if ('addEventListener' in document) {
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })
