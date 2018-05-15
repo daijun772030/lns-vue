@@ -2,13 +2,13 @@
   <div class="home">
     <main>
       <home-header />
-      <home-message />
+      <home-message />  
       <home-tab />
       <div class="home-content">
         <home-card />
+        <!-- <home-card />
         <home-card />
-        <home-card />
-        <home-card />
+        <home-card /> -->
         <div class="home-content-name">— 爱鸿森借款 —</div>
       </div>
     </main>
