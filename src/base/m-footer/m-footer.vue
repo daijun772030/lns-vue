@@ -33,7 +33,6 @@
 </script>
 <style rel="stylesheet" lang="stylus" scoped>
   @import "~common/stylus/mixin.styl"
-
   .nav
     position fixed
     left: 0
