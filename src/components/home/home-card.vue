@@ -71,6 +71,8 @@
             align-items center
             text-align center
             // display inline-block 
+        &button 
+            width 100% 
              
             
 

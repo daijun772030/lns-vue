@@ -18,8 +18,8 @@
       return {
         list: [
           {name: '首页', link: '/', icon: IconIndex, activeIcon: IconIndexC},
-          {name: '借款', link: '/xx', icon: IconRefund, activeIcon: IconRefundC},
-          {name: '账户', link: '/account', icon: IconPofile, activeIcon: IconPofileC}
+          {name: '借款', link: '../components/consume/Consumption', icon: IconRefund, activeIcon: IconRefundC},
+          {name: '账户', link: '../components/consume/Consumption', icon: IconPofile, activeIcon: IconPofileC}
         ],
         active: 0
       }
